@@ -2,14 +2,11 @@
 %html
   %head
     %title How to Install Ruby
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %link{:href => "/css/bootstrap.min.css", :media => "screen", :rel => "stylesheet"}/
+    %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
+    %link{href: "/css/bootstrap.min.css", media: "screen", rel: "stylesheet"}/
   %body
-    .navbar.navbar-top
-      .navbar-inner
-        %a.brand{:href => "/"} How to Install Ruby
-        = haml :nav
+    = haml :nav
     .container
       = yield
-    %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
-    %script{:src => "/js/bootstrap.min.js"}
+    %script{src: "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+    %script{src: "/js/bootstrap.min.js"}
