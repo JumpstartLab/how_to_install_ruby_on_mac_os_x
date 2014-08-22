@@ -3,6 +3,6 @@ require 'haml'
 
 class App < Sinatra::Base
   get "/" do
-    haml :index, format: :html5
+    haml :index
   end
 end
